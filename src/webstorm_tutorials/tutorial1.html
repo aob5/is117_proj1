@@ -3,46 +3,371 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>WebStorm Tutorial 1</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="apple-touch-icon" href="../icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../../dist/css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
 
-  <!-- Add your site or application content here -->
-  <div id="tutorial_wrapper">
-    <div id="tutorial_content">
-      <div class="tutorial_innertube">
-        <h1>Tutorial 1: WebStorm Basics</h1>
-        <p>This tutorial will explain step by step on how to setup WebStorm and connect with the Andrew File System (AFS)!</p>
-      </div>
-    </div>
+<!-- Add your site or application content here -->
+<header>
+  <div class="gitInnertube">
+    <menu>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="webstorm.html">WebStorm Tutorials</a></li>
+        <li><a href="../git_tutorials/git.html">Git Tutorials</a></li>
+      </ul>
+    </menu>
   </div>
-  <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+</header>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<div id="wsWrapper">
+
+  <main>
+    <div id="wsContent1">
+      <div class="wsInnertube">
+        <h1>Tutorial 1: WebStorm Basics</h1>
+        <p>This tutorial will explain step by step on how to setup WebStorm and connect with the Andrew File System
+          (AFS)!</p>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step1.png" alt="Step 1" />
+        <div class="wsContent_right">
+          <h2>Step 1:</h2>
+          <p>If you haven't already done so, download and install the WebStorm application to get started. Once
+            installed, open it and click on "Create New Project".</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step2.png" alt="Step 2" />
+        <div class="wsContent_right">
+          <h2>Step 2:</h2>
+          <p>Give a name to your new WebStorm project, and select the most recent version if possible. Then, click the
+            blue "Create" button in the bottom right corner.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step3.png" alt="Step 3" />
+        <div class="wsContent_right">
+          <h2>Step 3:</h2>
+          <p>You will now see your project opened. To get started on logging into AFS, go to the "Tools" dropdown menu,
+            and select the "Start SSH session..." option.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step4.png" alt="Step 4" />
+        <div class="wsContent_right">
+          <h2>Step 4:</h2>
+          <p>From here, you can simply login by providing a host name, your user credentials, and a port number. After
+            providing that information, click on the blue "OK" button in the bottom right corner.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step5.png" alt="Step 5" />
+        <div class="wsContent_right">
+          <h2>Step 5:</h2>
+          <p>You will now see a sub-window showing your full access to the remote terminal from AFS. This terminal is
+            typically used to control files and folders from AFS remotely.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step6.png" alt="Step 6" />
+        <div class="wsContent_right">
+          <h2>Step 6:</h2>
+          <p>Now, if you want to simulate the files and folders physically shown on AFS, you can do that by heading to
+            the "Tools" dropdown menu, selecting the "Deployment" submenu, and then selecting the "Configuration..."
+            option.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step7.png" alt="Step 7" />
+        <div class="wsContent_right">
+          <h2>Step 7:</h2>
+          <p>From here, you will want to click on the "+" symbol up at the top left corner, and select a connection
+            protocol as a means to connect to the AFS network remotely.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step8.png" alt="Step 8" />
+        <div class="wsContent_right">
+          <h2>Step 8:</h2>
+          <p>Provide a name for the connection you are attempting to set up, then click on the blue "OK" button in the
+            bottom right corner.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step9.png" alt="Step 9" />
+        <div class="wsContent_right">
+          <h2>Step 9:</h2>
+          <p>You will return to this window again, but now will be asked to provide information about the network you
+            are attempting to connect to. Similarly to the SSH session login, provide a host name, port number, and user
+            credentials. Also, provide any other links on the root path and web server url for any other configuration
+            purposes. Now go ahead and click on the "Mappings" tab above.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step10.png" alt="Step 10" />
+        <div class="wsContent_right">
+          <h2>Step 10:</h2>
+          <p>From here, you will want to set the paths to which files and folders will be deployed onto and from AFS to
+            the web. After everything is done being configured, click on the blue "OK" button in the bottom right
+            corner.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step11.png" alt="Step 11" />
+        <div class="wsContent_right">
+          <h2>Step 11:</h2>
+          <p>You will now see on the right hand side a sub-window of the physical files and folders that appear on your
+            AFS account. For better security, we would always want to make sure that when working on the local side, any
+            files and folders used from the local storage gets sent automatically to the AFS side simultaneously. For
+            that reason, head to the "Tools" dropdown menu for one last time, select the "Deployment" submenu, and then
+            select the "Automatic Upload" option from there.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step12.png" alt="Step 12" />
+        <div class="wsContent_right">
+          <h2>Step 12:</h2>
+          <p>Now that "Automatic Upload" is set, initiate your first upload to AFS in order to start the automatic
+            deployment. To do so, right-click whichever file you wish to upload to AFS, select the "Deployment" submenu
+            option, then select the "Upload to AFS" option. You will now have successfully uploaded your files while
+            making the automatic deployment active for your project.</p>
+        </div>
+      </div>
+
+      <div id="wsContent">
+        <div class="wsInnertube">
+          <p>Congradulations! You have now learned how to use WebStorm and set up the AFS!</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <nav>
+    <div class="wsInnertube">
+      <h3>Reference Links:</h3>
+      <ul>
+        <li><a href="https://www.jetbrains.com/help/rider/Live_Editing.html">JetBrains About WebStorm</a></li>
+        <li><a href="https://www.w3schools.com/html/">W3Schools About HTML</a></li>
+        <li><a href="https://www.w3schools.com/css/">W3Schools About CSS</a></li>
+        <li><a href="https://www.w3schools.com/js/">W3Schools About JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div id="tableSet">
+  <table class="tCenter">
+    <tr class="tableHeaders">
+      <td>Term:</td>
+      <td>Definition:</td>
+    </tr>
+
+    <tr>
+      <td>Terminal</td>
+      <td>
+        <p>An emulator for working with a command-line shell from inside the IDE. Having a command line right inside the
+          IDE lets you do things like running Git commands, and so on without switching windows and mental focus when
+          you need to perform a quick command line task.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>WebStorm</td>
+      <td>
+        <p>A powerful and intelligent IDE that gives you the best coding assistance for JavaScript, HTML and CSS and a
+          wide range of modern web technologies. WebStorm is perfectly equipped for complex client-side development and
+          server-side development with Node.js. It provides smart code insight, autocompletion, refactoring features,
+          on-the-fly error prevention, and much more. Together with support for the popular frameworks such as AngularJS
+          and Meteor and integrated instruments for testing, debugging and code analysis and integration with various
+          VCS, WebStorm enhances your productivity and takes your development experience to a whole new level.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Integrated Development Environment (IDE)</td>
+      <td>
+        <p>A software application that provides comprehensive facilities to computer programmers for software
+          development. An IDE normally consists of at least a source code editor, build automation tools and a
+          debugger.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>HTML5 Boilerplate</td>
+      <td>
+        <p>An HTML, CSS and JavaScript template (or boilerplate) for creating HTML5 websites with cross-browser
+          capability.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Grunt</td>
+      <td>
+        <p>An ecosystem that WebStorm parses grunt files in to recognizing definitions of tasks and targets, shows tasks
+          and targets in a tree view, lets you navigate between a task or a target in the tree and its definition in the
+          grunt file, and supports running and debugging tasks and targets.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Linux</td>
+      <td>
+        <p>A Unix-like, open source and community-developed operating system for computers, servers, mainframes, mobile
+          devices and embedded devices. Every version of the Linux operating system manages hardware resources, launches
+          and handles applications, and provides some form of user interface.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>HTTP</td>
+      <td>
+        <p>HTTP means HyperText Transfer Protocol. HTTP is the underlying protocol used by the World Wide Web and this
+          protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should
+          take in response to various commands.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Web Browser</td>
+      <td>
+        <p>A web browser, or simply "browser," is an application used to access and view websites. The primary function
+          of a web browser is to render HTML, the code used to design or "mark up" webpages. Each time a browser loads a
+          web page, it processes the HTML, which may include text, links, and references to images and other items, such
+          as cascading style sheets and JavaScript functions. The browser processes these items, then renders them in
+          the browser window.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>HTML</td>
+      <td>
+        <p>Stands for "Hypertext Markup Language." HTML is the language used to create webpages. It is a standardized
+          system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.
+          "Hypertext" refers to the hyperlinks that an HTML page may contain. "Markup language" refers to the way tags
+          are used to define the page layout and elements within the page.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>CSS</td>
+      <td>
+        <p>Stands for "Cascading Style Sheet." Cascading style sheets are used to format the layout of Web pages. They
+          can be used to define text styles, table sizes, and other aspects of Web pages that previously could only be
+          defined in a page's HTML. It is used to define styles for your web pages, including the design, layout and
+          variations in display for different devices and screen sizes.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Login</td>
+      <td>
+        <p>In the remote server configuration, a server runs on another computer (a remote host). To access files on the
+          server, login the remote server using any of the FTP/SFTP/FTPS protocols.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>File</td>
+      <td>
+        <p>In WebStorm, you can create files with language-specific extensions and some initial contents, thanks to file
+          templates for most of the languages supported by the IDE. File templates are specifications of the default
+          contents to be generated when creating a new file. Depending on the type of file you are creating, templates
+          provide initial code and formatting that is expected to be in all files of that type (according to industry
+          standards, your corporate policy, or for other reasons). WebStorm provides predefined templates for all
+          supported file types, which are suggested when you are creating a new file.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Folder / Directory</td>
+      <td>
+        <p>In WebStorm, content is a collection of files with which you are currently working, possibly organized in a
+          hierarchy of subfolders. The top-level folder of a project is its content root. You can add any folder as a
+          part of your project. In the Settings/Preferences dialog, click Directories. The Directories page opens. To
+          add a content root, click Add Content Root in the right-hand pane and then select the required folder in the
+          dialog that opens.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>AFS</td>
+      <td>
+        <p>The Andrew File System (AFS) is the primary academic computing environment at NJIT. AFS is a distributed file
+          system comprised of multiple file and database servers and several hundred MacOS, Linux, Unix, and Windows
+          client computers. A very wide spectrum of both open source and commercial applications, compilers, libraries,
+          and utilities is available in AFS. NJIT calls our AFS file system Highlander AFS for unique branding purposes.
+          Highlander AFS uses your UCID login and password. To best access Highlander AFS services, your computer should
+          be an AFS client.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Rules for Naming Files and Folders on the Web</td>
+      <td>
+        <p>Filenames are part of your URL—and therefore an important part of your HTML. You can name your file nearly
+          anything you choose, but you must follow a few rules of thumb to ensure that it displays correctly: don’t use
+          special characters, don’t use spaces, start the file name with a letter, use all lowercase letters, keep your
+          filenames short, and remember the file extension.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<footer>
+  <div class="wsInnertube">
+    <small>&copy; Copyright 2020, Antoun Elkomos, Ariel Batista</small>
+  </div>
+</footer>
+
+<script src="../../dist/js/vendor/modernizr-3.8.0.min.js"></script>
+<script src="../https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../dist/js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="../https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
