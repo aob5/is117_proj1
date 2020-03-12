@@ -36,6 +36,143 @@
   </div>
 </header>
 
+<div id="wsWrapper">
+
+  <main>
+    <div id="wsContent1">
+      <div class="wsInnertube">
+        <h1>Tutorial 1: WebStorm Basics</h1>
+        <p>This tutorial will explain step by step on how to setup WebStorm and connect with the Andrew File System
+          (AFS)!</p>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step1.png" alt="Step 1" />
+        <div class="wsContent_right">
+          <h2>Step 1:</h2>
+          <p>If you haven't already done so, download and install the WebStorm application to get started. Once
+            installed, open it and click on "Create New Project".</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step2.png" alt="Step 2" />
+        <div class="wsContent_right">
+          <h2>Step 2:</h2>
+          <p>Give a name to your new WebStorm project, and select the most recent version if possible. Then, click the
+            blue "Create" button in the bottom right corner.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step3.png" alt="Step 3" />
+        <div class="wsContent_right">
+          <h2>Step 3:</h2>
+          <p>You will now see your project opened. To get started on logging into AFS, go to the "Tools" dropdown menu,
+            and select the "Start SSH session..." option.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step4.png" alt="Step 4" />
+        <div class="wsContent_right">
+          <h2>Step 4:</h2>
+          <p>From here, you can simply login by providing a host name, your user credentials, and a port number. After
+            providing that information, click on the blue "OK" button in the bottom right corner.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step5.png" alt="Step 5" />
+        <div class="wsContent_right">
+          <h2>Step 5:</h2>
+          <p>You will now see a sub-window showing your full access to the remote terminal from AFS. This terminal is
+            typically used to control files and folders from AFS remotely.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step6.png" alt="Step 6" />
+        <div class="wsContent_right">
+          <h2>Step 6:</h2>
+          <p>Now, if you want to simulate the files and folders physically shown on AFS, you can do that by heading to
+            the "Tools" dropdown menu, selecting the "Deployment" submenu, and then selecting the "Configuration..."
+            option.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step7.png" alt="Step 7" />
+        <div class="wsContent_right">
+          <h2>Step 7:</h2>
+          <p>From here, you will want to click on the "+" symbol up at the top left corner, and select a connection
+            protocol as a means to connect to the AFS network remotely.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step8.png" alt="Step 8" />
+        <div class="wsContent_right">
+          <h2>Step 8:</h2>
+          <p>Provide a name for the connection you are attempting to set up, then click on the blue "OK" button in the
+            bottom right corner.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step9.png" alt="Step 9" />
+        <div class="wsContent_right">
+          <h2>Step 9:</h2>
+          <p>You will return to this window again, but now will be asked to provide information about the network you
+            are attempting to connect to. Similarly to the SSH session login, provide a host name, port number, and user
+            credentials. Also, provide any other links on the root path and web server url for any other configuration
+            purposes. Now go ahead and click on the "Mappings" tab above.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step10.png" alt="Step 10" />
+        <div class="wsContent_right">
+          <h2>Step 10:</h2>
+          <p>From here, you will want to set the paths to which files and folders will be deployed onto and from AFS to
+            the web. After everything is done being configured, click on the blue "OK" button in the bottom right
+            corner.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step11.png" alt="Step 11" />
+        <div class="wsContent_right">
+          <h2>Step 11:</h2>
+          <p>You will now see on the right hand side a sub-window of the physical files and folders that appear on your
+            AFS account. For better security, we would always want to make sure that when working on the local side, any
+            files and folders used from the local storage gets sent automatically to the AFS side simultaneously. For
+            that reason, head to the "Tools" dropdown menu for one last time, select the "Deployment" submenu, and then
+            select the "Automatic Upload" option from there.</p>
+        </div>
+      </div>
+
+      <div class="wsContent_instance">
+        <img src="../img/webstorm_tutorial1/step12.png" alt="Step 12" />
+        <div class="wsContent_right">
+          <h2>Step 12:</h2>
+          <p>Now that "Automatic Upload" is set, initiate your first upload to AFS in order to start the automatic
+            deployment. To do so, right-click whichever file you wish to upload to AFS, select the "Deployment" submenu
+            option, then select the "Upload to AFS" option. You will now have successfully uploaded your files while
+            making the automatic deployment active for your project.</p>
+        </div>
+      </div>
+
+      <div id="wsContent">
+        <div class="wsInnertube">
+          <p>Congradulations! You have now learned how to use WebStorm and set up the AFS!</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
 <script src="../../dist/js/vendor/modernizr-3.8.0.min.js"></script>
 <script src="../https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}"
         crossorigin="anonymous"></script>
