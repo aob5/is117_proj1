@@ -97,16 +97,226 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-#wrapper {
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+#gitWrapper {
   overflow: hidden;
 }
-#content {
+
+#gitContent1 {
   margin-right: 230px; /* Same as 'nav' width */
 }
-.innertube {
+
+#gitContent2 {
+  margin-right: 230px; /* Same as 'nav' width */
+}
+
+.gitInnertube {
   margin: 15px; /* Padding for content */
   margin-top: 0;
 }
+
+#wsWrapper {
+  overflow: hidden;
+}
+
+#wsContent1 {
+  margin-right: 230px; /* Same as 'nav' width */
+}
+
+#wsContent2 {
+  margin-right: 230px; /* Same as 'nav' width */
+}
+
+.wsInnertube {
+  margin: 15px; /* Padding for content */
+  margin-top: 0;
+}
+
+#content .content_instance {
+  width: 742px;
+  height: 300px;
+  clear: both;
+  background-color: white;
+  background-repeat: repeat-x;
+}
+
+#content .content_instance .content_right {
+  margin-top: 30px;
+  width: 385px;
+  float: left;
+}
+
+#content .content_instance .content_right p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+#content .content_instance h2 {
+  color: #FF0000;
+  padding-bottom: 7px;
+}
+
+#content .content_instance img {
+  width: 300px;
+  height: 177px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 15px;
+  float: left;
+  clear: none;
+}
+
+td {
+  font-weight: bold;
+  text-align: center;
+}
+
+table, tr, td {
+  border: 5px solid black;
+}
+
+table.tCenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr.tableHeaders {
+  text-align: center;
+}
+
+#webstorm_syn {
+  color: blue;
+  font-size: 1.5em;
+  line-height: 50px;
+}
+
+#git_syn {
+  color: red;
+  font-size: 1.5em;
+  line-height: 50px;
+}
+
+body {
+  min-width: 630px;
+}
+
+#container {
+  padding-left: 200px;
+  padding-right: 190px;
+}
+
+#container .column {
+  position: relative;
+  float: left;
+}
+
+#center {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+#left {
+  width: 180px;
+  padding: 0 10px;
+  right: 240px;
+  margin-left: -100%;
+}
+
+#right {
+  width: 130px;
+  padding: 0 10px;
+  margin-right: -100%;
+}
+
+#footer {
+  clear: both;
+}
+
+/* IE hack */
+* html #left {
+  left: 150px;
+}
+
+/* Make the columns the same height as each other */
+#container {
+  overflow: hidden;
+}
+
+#container .column {
+  padding-bottom: 1001em;
+  margin-bottom: -1000em;
+}
+
+/* Fix for the footer */
+* html body {
+  overflow: hidden;
+}
+
+* html #footer-wrapper {
+  float: left;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10010px;
+  margin-bottom: -10000px;
+  background: #fff;
+}
+
+/* Aesthetics */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Sans-serif, serif;
+  line-height: 1.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+div ul a {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+#header {
+  font-size: large;
+  padding: 0.3em;
+  background: #D8C192;
+}
+
+#left {
+  background: #95CBFF;
+}
+
+#right {
+  background: #95CBFF;
+}
+
+#center {
+  background: #FFF8E7;
+}
+
+#footer {
+  font-size: large;
+  padding: 0.3em;
+  background: #D8C192;
+  text-align: center;
+}
+
+#container .column {
+  padding-top: 1em;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -201,9 +411,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -223,16 +433,20 @@ textarea {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -241,14 +455,17 @@ textarea {
   a[href^="javascript:"]:after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
      * Printing Tables:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -256,19 +473,21 @@ textarea {
   thead {
     display: table-header-group;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
-
